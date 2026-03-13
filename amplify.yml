@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm --prefix todo-app ci
+        - npm --prefix todo-app ci --legacy-peer-deps
         - npm --prefix todo-app run lint
         - npm --prefix todo-app audit --audit-level=moderate
     build:
