@@ -3,12 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd todo-app
-        - npm ci
+        - npm --prefix todo-app ci
     build:
       commands:
-        - cd todo-app
-        - npm run build
+        - npm --prefix todo-app run build
   artifacts:
     baseDirectory: todo-app/build
     files:
