@@ -4,6 +4,8 @@ frontend:
     preBuild:
       commands:
         - npm --prefix todo-app ci
+        - npm --prefix todo-app run lint
+        - npm --prefix todo-app audit --audit-level=moderate
     build:
       commands:
         - npm --prefix todo-app run build
