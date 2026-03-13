@@ -1,0 +1,18 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd todo-app
+        - npm ci
+    build:
+      commands:
+        - cd todo-app
+        - npm run build
+  artifacts:
+    baseDirectory: todo-app/build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - todo-app/node_modules/**/*
