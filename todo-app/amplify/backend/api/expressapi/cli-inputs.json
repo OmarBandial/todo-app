@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/graphql": {
+      "name": "/graphql",
+      "lambdaFunction": "expressgraphql",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
